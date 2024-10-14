@@ -25,7 +25,7 @@ namespace RabbitMQ.Controllers
         public IActionResult ReceiveMessage()
         {
 
-            return Ok(new { message = _rabbitMQService.GetMessages() });
+            return Ok(new { messages = _rabbitMQService.GetMessages() });
         }
     }
 }
