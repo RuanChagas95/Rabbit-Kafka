@@ -38,7 +38,7 @@ namespace RabbitMQ.Repositories
         {
             var messages = new List<string>();
             int counter = 0;
-            while (true && counter < 10)
+            while (true && counter < 3)
             {
                 counter++;
                 var result = _channel.BasicGet(queue: queueName, autoAck: true);
