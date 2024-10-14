@@ -1,0 +1,6 @@
+@rabbit_kafka_HostAddress = http://localhost:5110
+
+GET {{rabbit_kafka_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
